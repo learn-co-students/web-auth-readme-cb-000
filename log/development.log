@@ -1280,3 +1280,83 @@ Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8b
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-15 00:51:22 -0500
+
+
+Started GET "/" for 69.245.10.143 at 2017-05-03 15:56:52 +0000
+Cannot render console from 69.245.10.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/home/ezirens-40806/code/labs/web-auth-readme-cb-000/app/controllers/application_controller.rb:6: syntax error, unexpected ':', expecting keyword_end
+  before_action: :authenticate_user
+                ^):
+  app/controllers/application_controller.rb:6: syntax error, unexpected ':', expecting keyword_end
+  app/controllers/searches_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (60.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (88.4ms)
+
+
+Started GET "/" for 69.245.10.143 at 2017-05-03 15:57:22 +0000
+Cannot render console from 69.245.10.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=0OZTEJSMF5ERPBBUVEJSKS0JU1IGIBGQBL31TDJ0SOE4TBY2&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 69.245.10.143 at 2017-05-03 15:58:31 +0000
+Cannot render console from 69.245.10.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=0OZTEJSMF5ERPBBUVEJSKS0JU1IGIBGQBL31TDJ0SOE4TBY2&response_type=code&redirect_uri=http%3A%2F%2Fhttp%3A%2F%2F138.197.214.116%3A30000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 69.245.10.143 at 2017-05-03 15:59:01 +0000
+Cannot render console from 69.245.10.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=0OZTEJSMF5ERPBBUVEJSKS0JU1IGIBGQBL31TDJ0SOE4TBY2&response_type=code&redirect_uri=http%3A%2F%2Fhttp%3A%2F%2F138.197.214.116%3A30000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 69.245.10.143 at 2017-05-03 16:08:40 +0000
+Cannot render console from 69.245.10.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=0OZTEJSMF5ERPBBUVEJSKS0JU1IGIBGQBL31TDJ0SOE4TBY2&response_type=code&redirect_uri=http%3A%2F%2Fhttp%3A%2F%2F138.197.214.116%3A30000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 69.245.10.143 at 2017-05-03 16:09:34 +0000
+Cannot render console from 69.245.10.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=&response_type=code&redirect_uri=http%3A%2F%2Fhttp%3A%2F%2F138.197.214.116%3A30000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 12ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 69.245.10.143 at 2017-05-03 16:12:02 +0000
+Cannot render console from 69.245.10.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=0OZTEJSMF5ERPBBUVEJSKS0JU1IGIBGQBL31TDJ0SOE4TBY2&response_type=code&redirect_uri=http%3A%2F%2Fhttp%3A%2F%2F138.197.214.116%3A30000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 69.245.10.143 at 2017-05-03 16:12:47 +0000
+Cannot render console from 69.245.10.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=0OZTEJSMF5ERPBBUVEJSKS0JU1IGIBGQBL31TDJ0SOE4TBY2&response_type=code&redirect_uri=http%3A%2F%2F138.197.214.116%3A30000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 69.245.10.143 at 2017-05-03 16:13:58 +0000
+Cannot render console from 69.245.10.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=0OZTEJSMF5ERPBBUVEJSKS0JU1IGIBGQBL31TDJ0SOE4TBY2&response_type=code&redirect_uri=http%3A%2F%2F138.197.214.116%3A30000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
