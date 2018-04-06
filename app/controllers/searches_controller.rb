@@ -1,4 +1,6 @@
 class SearchesController < ApplicationController
+  # skip_before_action :authenticate_user, only: [:friends]
+
   def search
   end
 
@@ -13,6 +15,7 @@ class SearchesController < ApplicationController
       req.params['v'] = '20160201'
       req.params['near'] = params[:zipcode]
       req.params['query'] = 'coffee shop'
+      req.params['oauth_token'] = session[:token] # added so search works
     end
 
     body = JSON.parse(@resp.body)
@@ -27,5 +30,14 @@ class SearchesController < ApplicationController
     rescue Faraday::TimeoutError
       @error = "There was a timeout. Please try again."
       render 'search'
+  end
+
+  def friends
+    resp = Faraday.get('https://api.foursquare.com/v2/users/self/friends') do |req|
+      # we need to pass in the user's oauth token with any request made
+      req.params['oauth_token'] = session[:token] 
+      req.params['v'] = '20160201'
+    end
+    @friends = JSON.parse(resp.body)['response']['friends']['items']
   end
 end
