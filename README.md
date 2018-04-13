@@ -13,7 +13,7 @@ We're going to expand on our Coffee Shop example to use OAuth with the Foursquar
 
 Until now, we've been authenticating to APIs at the *application* level using a Client ID/Secret pair with each request.
 
-As we learned, this level of application authentication is important in that it allows the API provider to ensure good behavior by any client application.
+As we learned, this level of application authentication is important in that it allows the API provider to ensure good behavior by any client application. 
 
 Application-level authentication like this gives us access to application-level functions, for instance, venue search. This is an application-level function because you don't need to be any particular user to search for a coffee shop. In fact, if we look at the [venue search](https://developer.foursquare.com/docs/venues/search) API documentation, we see an entry: **Requires Acting User: No** at the top.
 
