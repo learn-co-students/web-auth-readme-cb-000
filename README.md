@@ -11,7 +11,7 @@
 
 We're going to expand on our Coffee Shop example to use OAuth with the Foursquare API to perform actions on behalf of an individual user.
 
-### API User Authentication
+### API User Authentication 
 
 Until now, we've been authenticating to APIs at the *application* level using a Client ID/Secret pair with each request.
 
