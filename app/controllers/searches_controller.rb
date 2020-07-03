@@ -28,4 +28,18 @@ class SearchesController < ApplicationController
       @error = "There was a timeout. Please try again."
       render 'search'
   end
+
+  ### users/self/friends doesn't work as shown in the lesson. Doesn't seem to be a valid endpoint as shown at https://developer.foursquare.com/docs/places-api/endpoints/ ?? so I modified the request and the @friends setter to simply grab the friends count and display that in the view.
+
+
+  def friends
+    resp = Faraday.get("https://api.foursquare.com/v2/users/self") do |req|
+      req.params['oauth_token'] = session[:token]
+      req.params['v'] = '20160201'
+    end
+    @friends = JSON.parse(resp.body)["response"]["user"]["friends"]["count"]
+    render 'friends'
+  end
+
+
 end
